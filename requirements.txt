@@ -1,0 +1,14 @@
+numpy
+tensorflow-gpu
+pillow
+h5py
+sklearn
+scikit-image
+pyyaml
+-e gantools
+-e gantools/tfnntools
+matplotlib
+jupyterlab
+moviepy
+requests
+lenstools
