@@ -1,0 +1,3 @@
+[submodule "gantools"]
+	path = gantools
+	url = https://github.com/nperraud/gantools.git
