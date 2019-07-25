@@ -56,17 +56,15 @@ def unzip(file, targetdir):
 
 
 if __name__ == '__main__':
-    # The dataset is availlable at https://doi.org/10.5281/zenodo.1303272
+    # The checkpoints can be downloaded at https://zenodo.org/record/3350871
     
-    url_checkpoints = 'https://zenodo.org/record/3257564/files/saved_results.zip?download=1'
-#     url_readme = 'https://zenodo.org/record/1464832/files/README.md?download=1'
+    url_checkpoints = 'https://zenodo.org/record/3350871/files/saved_results.zip?download=1'
+    url_readme = 'https://zenodo.org/record/3350871/files/README.md?download=1'
 
-    md5_checkpoints = 'a079b670909cbd6ba428e65dc16edad7'
-#     md5_readme = '052c060c4f8e0e23699de76e65db557d'
+    md5_checkpoints = '2df30b9ea964ee81498cd34fc93f3afb'
+    md5_readme = '2a46c790b7fe74572dc7362eaaa1273f'
 
-#     print('Download README')
-#     download(url_readme, 'data/nbody')
-#     assert (check_md5('data/nbody/README.md', md5_readme))
+
 
     print('Download checkpoints')
     download(url_checkpoints, './')
@@ -75,4 +73,6 @@ if __name__ == '__main__':
     unzip('saved_results.zip', '')
     os.remove('saved_results.zip')
 
-
+    print('Download README')
+    download(url_readme, 'saved_results/nbody')
+    assert (check_md5('saved_results/nbody/README.md', md5_readme))
