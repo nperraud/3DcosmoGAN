@@ -58,11 +58,11 @@ def unzip(file, targetdir):
 if __name__ == '__main__':
     # The checkpoints can be downloaded at https://zenodo.org/record/3350871
     
-    url_checkpoints = 'https://zenodo.org/record/3350871/files/saved_results.zip?download=1'
-    url_readme = 'https://zenodo.org/record/3350871/files/README.md?download=1'
+    url_checkpoints = 'https://zenodo.org/record/3369581/files/saved_results.zip?download=1'
+    url_readme = 'https://zenodo.org/record/3369581/files/README.md?download=1'
 
     md5_checkpoints = '2df30b9ea964ee81498cd34fc93f3afb'
-    md5_readme = '2a46c790b7fe74572dc7362eaaa1273f'
+    md5_readme = '57538920b803a489d34ab0a143e80151'
 
 
 

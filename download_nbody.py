@@ -58,11 +58,11 @@ def unzip(file, targetdir):
 if __name__ == '__main__':
     # The dataset is availlable at https://doi.org/10.5281/zenodo.1303272
     
-    url_nbody = 'https://zenodo.org/record/1464832/files/nbody-cubes.zip?download=1'
-    url_readme = 'https://zenodo.org/record/1464832/files/README.md?download=1'
+    url_nbody = 'https://zenodo.org/record/3369574/files/nbody-cubes.zip?download=1'
+    url_readme = 'https://zenodo.org/record/3369574/files/README.md?download=1'
 
     md5_nbody = 'abc89d98e60d94fda703f5d176594dd9'
-    md5_readme = '052c060c4f8e0e23699de76e65db557d'
+    md5_readme = '0d88b246880d554406e48d249931008d'
 
     print('Download README')
     download(url_readme, 'data/nbody')

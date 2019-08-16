@@ -156,8 +156,8 @@ Please consider citing our papers if you use it.
   author = {Nathana\"el, Perraudin and Ankit, Srivastava and Kacprzak, Tomasz and Lucchi, Aurelien and Hofmann, Thomas and R{\'e}fr{\'e}gier, Alexandre},
   year = {2019},
   archivePrefix = {arXiv},
-  eprint = {....},
-  url = {https://arxiv.org/abs/...},
+  eprint = {1908.05519},
+  url = {https://arxiv.org/abs/1908.05519},
 }
 ```
 

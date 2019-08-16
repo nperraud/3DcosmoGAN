@@ -66,7 +66,7 @@ def compute_and_plot_psd(raw_images, gen_sample_raw, multiply=False, box_ll=350,
 #               'Fractional difference: {}'.format(logel2, l2, logel1, l1, frac_diff))
     
     # Plot the two curves
-    plot_cmp(x, psd_gen, psd_real, ax=ax, xscale='log', yscale='log', xlabel='$l$', ylabel='$\\frac{l(l+1)P(l)}{2\pi}$' if multiply else '$P(l)$', title="Power spectral density", shade=True, confidence=confidence, ylim=ylim, fractional_difference=fractional_difference, loc=loc)
+    plot_cmp(x, psd_gen, psd_real, ax=ax, xscale='log', yscale='log', xlabel='$k$' if multiply else '$l$', ylabel='$\\frac{l(l+1)P(l)}{2\pi}$' if multiply else '$P(k)$', title="Power spectral density", shade=True, confidence=confidence, ylim=ylim, fractional_difference=fractional_difference, loc=loc)
     return score
 
 def compute_and_plot_peak_count(raw_images, gen_sample_raw, display=True, ax=None, log=True, lim = lim_peak, neighborhood_size=5, threshold=0, confidence=None, ylim=None, fractional_difference=False, algo='relative', loc=1, **kwargs):
