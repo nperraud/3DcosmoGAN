@@ -12,7 +12,7 @@ This repository contains the code to take part in the 3DCosmo benchmark. The ide
 
 This code is assotiated with the paper *[Cosmological N-body simulations: a challenge for scalable generative models][linkpaper]*  that focuses mostly on scaling GAN to very large samples ( 256x256x256 pixels). 
 
-[linkpaper]:https://...
+[linkpaper]:https://arxiv.org/abs/1908.05519
 
 ## Installation
 
