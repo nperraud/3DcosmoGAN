@@ -31,18 +31,67 @@ For a local installation, follow the instructions below.
 
 ### Required packages
 
-*We highly recommend working in a virtual environment.*
+This code is written in Python 3.6. Therefore we suggest using this version of Python. You can install `pyenv` to manage multiple versions of Python on your computer using the following command:
+  ```
+  curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+  ```
+Follow the installation instructions and be sure that pyenv loads correctly in your shell. You also probably needs to install some packages. In Ubuntu, you can simply do:
+  ```
+  sudo apt install zlib1g zlib1g-dev libssl-dev libbz2-dev libsqlite3-dev
+  ```
+Here maybe restart your shell.
+You can then install Python 3.6 using the command:
+  ```
+  pyenv install 3.6.15
+  ```
+You can then create a virtual environment using the command:
+  ```
+  pyenv virtualenv 3.6.15 3dcosmo
+  ```
+You can activate this environment using the command:
+  ``` 
+  pyenv activate 3dcosmo
+  ```
+Make sure that you are using the correct version of Python using the command:
+  ```
+  python --version
+  ```
+It should return `Python 3.6.15`.
 
-You can simply install those packages with the following command:
+Here you may have to upgrade setuptools and pip using the command:
+  ```
+  pip install --upgrade setuptools pip
+  ```
+
+Finally you should be able to install the required packages with the following command:
 	```
-	pip install -r requirements.txt
+	pip install -r requirements_3.6.15.txt
+  pip install -e gantools
+  pip install -e gantools/tfnntools
 	```
-or if you have no gpu:
-	```
-	pip install -r requirements_nogpu.txt
-	```
+
+This might fail. In this case, you can try to use poetry to install the packages. You can install poetry using the command:
+  ```
+  curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+  ```
+
+Then you can install the packages using the command:
+  ```
+  poetry install
+  ```
+On my computer `lenstools` fails to install. I had to install it manually using the command:
+  ```
+  pip install lenstools
+  ```
+Then install the final part of the library using:
+  ```
+  pip install -e gantools
+  pip install -e gantools/tfnntools
+  ```
 
 For some operations, you may require `pynbody` as it was used to preprocess the simulation. If so, you need to install it separately.
+
+
 
 
 

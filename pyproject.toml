@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "3dcosmogan"
+version = "0.1.0"
+description = ""
+authors = ["Nathanaël Perraudin <nathanael.perraudin@sdsc.ethz.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.6.15"
+tensorflow = "<2.0.0"
+numpy = "*"
+h5py = "*"
+scikit-learn = "*"
+scikit-image = "*"
+matplotlib = "*"
+pyyaml = "*"
+pillow = "*"
+moviepy = "*"
+requests = "*"
+lenstools = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,14 +1,14 @@
 numpy
-tensorflow-gpu
+tensorflow-gpu==1.13.2
+protobuf==3.19.6
 pillow
 h5py
-sklearn
+scikit-learn
 scikit-image
 pyyaml
--e gantools
--e gantools/tfnntools
 matplotlib
 jupyterlab
-moviepy
 requests
-lenstools
+moviepy
+-e gantools
+-e gantools/tfnntools
