@@ -2,7 +2,7 @@ absl-py==1.4.0
 astor==0.8.1
 astropy==4.1
 cached-property==1.5.2
-certifi==2023.5.7
+certifi==2023.7.22
 charset-normalizer==2.0.12
 cycler==0.11.0
 dataclasses==0.8
